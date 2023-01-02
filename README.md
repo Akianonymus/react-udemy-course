@@ -11,3 +11,7 @@
 ## Assignment 2
 
     Add filters and log some data to console
+
+## Assignment 3
+
+    Make the filter work
