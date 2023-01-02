@@ -8,3 +8,6 @@
 
     Keep the expenses data in the App component and pass that data into the newly created component
 
+## Assignment 2
+
+    Add filters and log some data to console
