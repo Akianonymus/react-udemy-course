@@ -5,6 +5,12 @@ import styles from "./AvailableMeals.module.css";
 
 const DUMMY_MEALS = [
   {
+    id: "k1",
+    name: "Chapati",
+    description: "Chapati",
+    price: 1,
+  },
+  {
     id: "m1",
     name: "Sushi",
     description: "Finest fish and veggies",

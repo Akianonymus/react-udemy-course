@@ -16,6 +16,10 @@ const Cart = (props) => {
     cartCtx.removeItem(id);
   };
 
+  const cartRemoveAllHandler = () => {
+    cartCtx.removeAll();
+  };
+
   const cartItemAddHandler = (item) => {
     cartCtx.addItem({ ...item, amount: 1 });
   };
@@ -46,7 +50,18 @@ const Cart = (props) => {
         <button className={styles["button--alt"]} onClick={props.onClose}>
           Close
         </button>
-        {hasItems && <button className={styles.button}>Order</button>}
+        {hasItems && (
+          <button
+            className={styles.button}
+            onClick={() => {
+              alert("Food has been ordered");
+              props.onClose();
+              cartRemoveAllHandler();
+            }}
+          >
+            Order
+          </button>
+        )}
       </div>
     </Modal>
   );
